@@ -39,7 +39,7 @@ BEGIN
 	TRUNCATE TABLE bronze.crm_cust_info;
 	RAISE NOTICE '>> Inserting Data into: bronze.crm_cust_info';
 	COPY bronze.crm_cust_info
-	FROM 'D:\Personal\projects\data-warehouse-sql-project\datasets\source_crm\cust_info.csv'
+	FROM '\datasets\source_crm\cust_info.csv'
 		DELIMITER ','
 		CSV HEADER;
 	SELECT COUNT(*) INTO rows_inserted
@@ -54,7 +54,7 @@ BEGIN
 	TRUNCATE TABLE bronze.crm_prd_info;
 	RAISE NOTICE '>> Inserting Data into: bronze.crm_prd_info';
 	COPY bronze.crm_prd_info
-	FROM 'D:\Personal\projects\data-warehouse-sql-project\datasets\source_crm\prd_info.csv'
+	FROM '\datasets\source_crm\prd_info.csv'
 		DELIMITER ','
 		CSV HEADER;
 	SELECT COUNT(*) INTO rows_inserted
@@ -69,7 +69,7 @@ BEGIN
 	TRUNCATE TABLE bronze.crm_sales_details;
 	RAISE NOTICE '>> Inserting Data into: bronze.crm_sales_details';
 	COPY bronze.crm_sales_details
-	FROM 'D:\Personal\projects\data-warehouse-sql-project\datasets\source_crm\sales_details.csv'
+	FROM '\datasets\source_crm\sales_details.csv'
 		DELIMITER ','
 		CSV HEADER;
 	SELECT COUNT(*) INTO rows_inserted
@@ -88,7 +88,7 @@ BEGIN
 	TRUNCATE TABLE bronze.erp_cust_az12;
 	RAISE NOTICE '>> Inserting Data into: bronze.erp_cust_az12';
 	COPY bronze.erp_cust_az12
-	FROM 'D:\Personal\projects\data-warehouse-sql-project\datasets\source_erp\CUST_AZ12.csv'
+	FROM '\datasets\source_erp\CUST_AZ12.csv'
 		DELIMITER ','
 		CSV HEADER;
 	SELECT COUNT(*) INTO rows_inserted
@@ -103,7 +103,7 @@ BEGIN
 	TRUNCATE TABLE bronze.erp_loc_a101;
 	RAISE NOTICE '>> Inserting Data into: bronze.erp_loc_a101';
 	COPY bronze.erp_loc_a101
-	FROM 'D:\Personal\projects\data-warehouse-sql-project\datasets\source_erp\LOC_A101.csv'
+	FROM '\datasets\source_erp\LOC_A101.csv'
 		DELIMITER ','
 		CSV HEADER;
 	SELECT COUNT(*) INTO rows_inserted
@@ -118,7 +118,7 @@ BEGIN
 	TRUNCATE TABLE bronze.erp_px_cat_g1v2;
 	RAISE NOTICE '>> Inserting Data into: bronze.erp_px_cat_g1v2';
 	COPY bronze.erp_px_cat_g1v2
-	FROM 'D:\Personal\projects\data-warehouse-sql-project\datasets\source_erp\PX_CAT_G1V2.csv'
+	FROM '\datasets\source_erp\PX_CAT_G1V2.csv'
 		DELIMITER ','
 		CSV HEADER;
 	SELECT COUNT(*) INTO rows_inserted
